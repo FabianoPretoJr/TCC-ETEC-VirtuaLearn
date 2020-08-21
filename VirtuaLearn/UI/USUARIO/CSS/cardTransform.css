@@ -1,0 +1,51 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+.cardTransf-container {
+    perspective: 900%;
+    margin-right: 0 auto;
+}
+
+.cardTransf {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    position: absolute;
+    background: #222;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    backface-visibility: hidden;
+}
+
+.front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.cardTransf-container:hover .cardTransf {
+    transform: rotateY(180deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}

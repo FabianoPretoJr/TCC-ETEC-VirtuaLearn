@@ -1,0 +1,160 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Lato");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.h3 {
+    text-align:justify;
+}
+
+
+
+
+
+.quiz-container {
+    width: 650px;
+    color: #222;
+    font-size: 110%;
+    margin: auto;
+
+}
+
+    .quiz-container h1 {
+        text-align: justify;
+        color: #ffb152;
+        margin-bottom: 10px;
+    }
+
+    .quiz-container .box {
+        padding: 10px 15px;
+        display:block;
+    }
+
+    .quiz-container .question {
+        background-color: #ffb152;
+        margin-bottom: 25px;
+        font-size: 115%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        word-break: break-word;
+        text-align: justify;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+        .quiz-container .question:after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 35px;
+            width: 0;
+            height: 50;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid #ffb152;
+        }
+
+        .quiz-container .question span {
+            background-color: #ffb152;
+            color: white;
+            display: block;
+            float: left;
+            margin-left: -5px;
+            margin-top: -10px;
+            margin-right: 0px;
+            padding: 0px 0px;
+            text-align: justify;
+            word-break: break-word;
+            /*width: 40px;*/
+        }
+
+    .quiz-container .answers {
+        padding-left: 15px;
+        list-style-type: none;
+        text-align: justify;
+        word-break: break-word;
+    }
+
+        .quiz-container .answers .answer {
+            background-color: #fff;
+            color: #222;
+            margin-bottom: 1em;
+            position: relative;
+            padding: 1em;
+            border-radius: 10px;
+            text-align: justify;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+            .quiz-container .answers .answer:hover, .quiz-container .answers .answer.active {
+                cursor: pointer;
+                color: #222;
+            }
+
+                .quiz-container .answers .answer:hover span:not([class^="checkmark"]), .quiz-container .answers .answer.active span:not([class^="checkmark"]) {
+                    background-color: #222;
+                }
+
+                .quiz-container .answers .answer.active span.checkmark {
+                    background-color: rgba(255, 255, 255, 0);
+                    color: rgba(255, 255, 255, 0);
+                    position: absolute;
+                    top: 12px;
+                    right: 20px;
+                    font-size: 120%;
+                    text-transform: uppercase;
+                    text-align: justify;
+                }
+
+            .quiz-container .answers .answer span:not([class^="checkmark"]) {
+                background-color: #ffb152;
+                color: white;
+                display: block;
+                float: left;
+                margin-left: 1em;
+                margin-top: 0 auto;
+                margin-right: 1em;
+                padding: 8px 0;
+                text-align: justify;
+                text-transform: uppercase;
+                width: 50px;
+                border-radius: 5px;
+            }
+
+    .quiz-container button {
+        background-color: #ffb152;
+        color: #fff;
+        font-size: 110%;
+        border: 0;
+        width: 100%;
+        position: relative;
+        border-radius: 50px;
+    }
+
+        .quiz-container button:hover {
+            background-color: #222;
+            cursor: pointer;
+        }
+
+        .quiz-container button span {
+            font-size: 200%;
+            position: absolute;
+            top: -8px;
+            right: 10px;
+        }
+
+@media (max-width: 450px) {
+    .quiz-container {
+        width: calc(100% - 30px);
+    }
+}
+
+
+
+
+
+    

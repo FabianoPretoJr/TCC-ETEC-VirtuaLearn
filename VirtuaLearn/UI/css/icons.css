@@ -1,0 +1,37 @@
+﻿
+
+body {
+    padding-top: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a svg rect {
+        stroke: #eeeeee;
+        stroke-width: 4;
+        fill: #eeeeee;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    a svg path {
+        fill: #000000;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    a:hover svg rect {
+        stroke-width: 50;
+        stroke: #ffb152;
+    }
+
+    a:hover svg path {
+        fill: #ffffff;
+    }

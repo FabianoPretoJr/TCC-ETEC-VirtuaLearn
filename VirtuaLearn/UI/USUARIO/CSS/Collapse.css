@@ -1,0 +1,173 @@
+﻿main {
+    margin: 50px 0;
+}
+
+    main faq .card {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+        main faq .card .card-header {
+            border: 0;
+            -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            border-radius: 2px;
+            padding: 0;
+        }
+
+            main faq .card .card-header .btn-header-link {
+                color: #fff;
+                display: block;
+                text-align: left;
+                background: #ffb152;
+                color: #222;
+                padding: 10px;
+            }
+
+                main faq .card .card-header .btn-header-link:after {
+                    content: "\f107";
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    float: right;
+                }
+
+                main faq .card .card-header .btn-header-link.collapsed {
+                    background: #ffb152;
+                    color: #222;
+                }
+
+                    main faq .card .card-header .btn-header-link.collapsed:after {
+                        content: "\f106";
+                    }
+
+        main faq .card .collapsing {
+            background: #ffb152;
+            line-height: 30px;
+        }
+
+        main faq .card .collapse {
+            border: 0;
+        }
+
+            main faq .card .collapse.show {
+                background: #ffb152;
+                line-height: 30px;
+                color: #222;
+            }
+
+
+
+#maaiin {
+    margin: 50px 0;
+}
+
+    maaiin fadd .card {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+        maaiin fadd .card .card-header {
+            border: 0;
+            -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            border-radius: 2px;
+            padding: 0;
+        }
+
+            maaiin fadd .card .card-header .btn-header-link {
+                color: #fff;
+                display: block;
+                text-align: left;
+                background: #fff;
+                color: #222;
+                padding: 10px;
+            }
+
+                maaiin fadd .card .card-header .btn-header-link:after {
+                    content: "\f107";
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    float: right;
+                }
+
+                maaiin fadd .card .card-header .btn-header-link.collapsed {
+                    background: #fff;
+                    color: #222;
+                }
+
+                    maaiin fadd .card .card-header .btn-header-link.collapsed:after {
+                        content: "\f106";
+                    }
+
+        maaiin fadd .card .collapsing {
+            background: #ffb152;
+            line-height: 30px;
+        }
+
+        maaiin fadd .card .collapse {
+            border: 0;
+        }
+
+            maaiin fadd .card .collapse.show {
+                background: #ffb152;
+                line-height: 30px;
+                color: #222;
+            }
+
+
+#maintt {
+    margin: 50px 0;
+}
+
+maintt fagg .card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+    maintt fagg .card .card-header {
+        border: 0;
+        -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+        box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+        border-radius: 2px;
+        padding: 0;
+    }
+
+        maintt fagg .card .card-header .btn-header-link {
+            color: #fff;
+            display: block;
+            text-align: left;
+            background: #fff;
+            color: #222;
+            padding: 10px;
+        }
+
+            maintt fagg .card .card-header .btn-header-link:after {
+                content: "\f107";
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                float: right;
+            }
+
+            maintt fagg .card .card-header .btn-header-link.collapsed {
+                background: #fff;
+                color: #222;
+            }
+
+                maintt fagg .card .card-header .btn-header-link.collapsed:after {
+                    content: "\f106";
+                }
+
+    maintt fagg .card .collapsing {
+        background: #ffb152;
+        line-height: 30px;
+    }
+
+    maintt fagg .card .collapse {
+        border: 0;
+    }
+
+        maintt fagg .card .collapse.show {
+            background: #ffb152;
+            line-height: 30px;
+            color: #222;
+        }

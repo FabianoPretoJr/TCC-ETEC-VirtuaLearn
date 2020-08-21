@@ -1,0 +1,187 @@
+﻿a {
+    color: #222;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+    a:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+main {
+    margin: 50px 0;
+}
+
+    main faq cartt {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+        main faq cartt cartt-cab {
+            border: 0;
+            -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            border-radius: 2px;
+            padding: 0;
+        }
+
+            main faq cartt cartt-cab .btnn-cab-link {
+                color: #fff;
+                display: block;
+                text-align: left;
+                background: #fff;
+                color: #fff;
+                padding: 10px;
+            }
+
+                main faq cartt cartt-cab .btnn-cab-link:after {
+                    content: "\f107";
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    float: right;
+                }
+
+                main faq cartt cartt-cab .btnn-cab-link.collapsed {
+                    background: #fff;
+                    color: #222;
+                }
+
+                    main faq cartt cartt-cab .btnn-cab-link.collapsed:after {
+                        content: "\f106";
+                    }
+
+        main faq cartt .collapsing {
+            background: #ffb152;
+            line-height: 30px;
+        }
+
+        main faq cartt .collapse {
+            border: 0;
+        }
+
+            main faq cartt .collapse.show {
+                background: #ffb152;
+                line-height: 30px;
+                color: #222;
+            }
+
+
+            /*---------------segundo bloco---------------*/
+
+bloco2 {
+    margin: 50px 0;
+}
+
+    bloco2 facc kart {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+        bloco2 facc kart kart-capp {
+            border: 0;
+            -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            border-radius: 2px;
+            padding: 0;
+        }
+
+            bloco2 facc kart kart-capp .butnn-capp-link {
+                color: #fff;
+                display: block;
+                text-align: left;
+                background: #fff;
+                color: #fff;
+                padding: 10px;
+            }
+
+                bloco2 facc kart kart-capp .butnn-capp-link:after {
+                    content: "\f107";
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    float: right;
+                }
+
+                bloco2 facc kart kart-capp .butnn-capp-link.collapsee {
+                    background: #fff;
+                    color: #222;
+                }
+
+                    bloco2 facc kart kart-capp .butnn-capp-link.collapsaad:after {
+                        content: "\f106";
+                    }
+
+        bloco2 facc kart .collapsig {
+            background: #ffb152;
+            line-height: 30px;
+        }
+
+        bloco2 facc kart .collapsee {
+            border: 0;
+        }
+
+            bloco2 facc kart .collapsee.shown {
+                background: #ffb152;
+                line-height: 30px;
+                color: #222;
+            }
+
+
+/*---------------terceiro bloco---------------*/
+
+bloco3 {
+    margin: 50px 0;
+}
+
+    bloco3 fitt coart {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+        bloco3 fitt coart coart-cott {
+            border: 0;
+            -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            border-radius: 2px;
+            padding: 0;
+        }
+
+            bloco3 fitt coart coart-cott .batnn-cott-link {
+                color: #fff;
+                display: block;
+                text-align: left;
+                background: #fff;
+                color: #fff;
+                padding: 10px;
+            }
+
+                bloco3 fitt coart coart-cott .batnn-cott-link:after {
+                    content: "\f107";
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    float: right;
+                }
+
+                bloco3 fitt coart coart-cott .batnn-cott-link.collapsee {
+                    background: #fff;
+                    color: #222;
+                }
+
+                    bloco3 fitt coart coart-cott .batnn-cott-link.collapsee:after {
+                        content: "\f106";
+                    }
+
+        bloco3 fitt coart .collapsig {
+            background: #ffb152;
+            line-height: 30px;
+        }
+
+        bloco3 fitt coart .collapsee {
+            border: 0;
+        }
+
+            bloco3 fitt coart .collapsee.showm {
+                background: #ffb152;
+                line-height: 30px;
+                color: #222;
+            }

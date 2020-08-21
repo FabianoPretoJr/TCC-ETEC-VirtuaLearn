@@ -1,0 +1,1382 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{611EA471-8993-47CE-8EE3-B74E122E5FC7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VirtuaLearn</RootNamespace>
+    <AssemblyName>VirtuaLearn</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UI\ADMINISTRADOR\CertificadoAdmin.aspx" />
+    <Content Include="UI\ADMINISTRADOR\SenhaAdmin.aspx" />
+    <Content Include="UI\EXTERNO\AddCarrinho.aspx" />
+    <Content Include="UI\EXTERNO\Cadastro.aspx" />
+    <Content Include="UI\cart_img\bolsa.jpg" />
+    <Content Include="UI\cart_img\direito.jpg" />
+    <Content Include="UI\cart_img\justica.jpg" />
+    <Content Include="UI\cart_img\negociacoes.jpg" />
+    <Content Include="UI\cart_img\tecnlinguagem.jpg" />
+    <Content Include="UI\cart_img\trova.jpg" />
+    <Content Include="UI\cart_img\trovadorismo.jpg" />
+    <Content Include="UI\EXTERNO\Carrinho.aspx" />
+    <Content Include="UI\EXTERNO\Contato.aspx" />
+    <Content Include="UI\ADMINISTRADOR\ConteudoAdmin.aspx" />
+    <Content Include="UI\black-dashboard-master\assets\css\BackgroundPulseQuizz .css" />
+    <Content Include="UI\black-dashboard-master\assets\css\black-dashboard.css" />
+    <Content Include="UI\black-dashboard-master\assets\css\black-dashboard.min.css" />
+    <Content Include="UI\black-dashboard-master\assets\css\nucleo-icons.css" />
+    <Content Include="UI\black-dashboard-master\assets\demo\demo.css" />
+    <Content Include="UI\black-dashboard-master\assets\demo\demo.js" />
+    <Content Include="UI\black-dashboard-master\assets\img\12345.png" />
+    <Content Include="UI\black-dashboard-master\assets\img\anime3.png" />
+    <Content Include="UI\black-dashboard-master\assets\img\anime6.png" />
+    <Content Include="UI\black-dashboard-master\assets\img\apple-icon.png" />
+    <Content Include="UI\black-dashboard-master\assets\img\bg5.jpg" />
+    <Content Include="UI\black-dashboard-master\assets\img\default-avatar.png" />
+    <Content Include="UI\black-dashboard-master\assets\img\emilyz.jpg" />
+    <Content Include="UI\black-dashboard-master\assets\img\favicon.png" />
+    <Content Include="UI\black-dashboard-master\assets\img\header.jpg" />
+    <Content Include="UI\black-dashboard-master\assets\img\img_3115.jpg" />
+    <Content Include="UI\black-dashboard-master\assets\img\james.jpg" />
+    <Content Include="UI\black-dashboard-master\assets\img\mike.jpg" />
+    <Content Include="UI\black-dashboard-master\assets\img\now-logo.png" />
+    <Content Include="UI\black-dashboard-master\assets\js\black-dashboard.js" />
+    <Content Include="UI\black-dashboard-master\assets\js\black-dashboard.min.js" />
+    <Content Include="UI\black-dashboard-master\assets\js\core\bootstrap.min.js" />
+    <Content Include="UI\black-dashboard-master\assets\js\core\jquery.min.js" />
+    <Content Include="UI\black-dashboard-master\assets\js\core\popper.min.js" />
+    <Content Include="UI\black-dashboard-master\assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="UI\black-dashboard-master\assets\js\plugins\chartjs.min.js" />
+    <Content Include="UI\black-dashboard-master\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="UI\black-dashboard-master\docs\documentation.html" />
+    <Content Include="UI\black-dashboard-master\examples\dashboard.html" />
+    <Content Include="UI\black-dashboard-master\examples\icons.html" />
+    <Content Include="UI\black-dashboard-master\examples\map.html" />
+    <Content Include="UI\black-dashboard-master\examples\notifications.html" />
+    <Content Include="UI\black-dashboard-master\examples\rtl.html" />
+    <Content Include="UI\black-dashboard-master\examples\tables.html" />
+    <Content Include="UI\black-dashboard-master\examples\typography.html" />
+    <Content Include="UI\black-dashboard-master\examples\upgrade.html" />
+    <Content Include="UI\black-dashboard-master\examples\user.html" />
+    <Content Include="UI\black-dashboard-master\gulpfile.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\addons\datatables-select.min.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\addons\datatables.min.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\addons\directives.min.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\addons\flag.min.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\addons\jquery.zmd.hierarchical-display.min.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\addons\rating.min.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\bootstrap.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\bootstrap.min.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\mdb.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\mdb.lite.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\mdb.lite.min.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\mdb.min.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\modules\animations-extended.min.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\css\style.css" />
+    <Content Include="UI\EXTERNO\MDB-Free\img\mdb-favicon.ico" />
+    <Content Include="UI\EXTERNO\MDB-Free\img\overlays\01.png" />
+    <Content Include="UI\EXTERNO\MDB-Free\img\overlays\02.png" />
+    <Content Include="UI\EXTERNO\MDB-Free\img\overlays\03.png" />
+    <Content Include="UI\EXTERNO\MDB-Free\img\overlays\04.png" />
+    <Content Include="UI\EXTERNO\MDB-Free\img\overlays\05.png" />
+    <Content Include="UI\EXTERNO\MDB-Free\img\overlays\06.png" />
+    <Content Include="UI\EXTERNO\MDB-Free\img\overlays\07.png" />
+    <Content Include="UI\EXTERNO\MDB-Free\img\overlays\08.png" />
+    <Content Include="UI\EXTERNO\MDB-Free\img\overlays\09.png" />
+    <Content Include="UI\EXTERNO\MDB-Free\img\svg\arrow_left.svg" />
+    <Content Include="UI\EXTERNO\MDB-Free\img\svg\arrow_right.svg" />
+    <Content Include="UI\EXTERNO\MDB-Free\index.html" />
+    <Content Include="UI\EXTERNO\MDB-Free\INSANITY.txt" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\addons\datatables-select.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\addons\datatables.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\addons\directives.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\addons\flag.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\addons\imagesloaded.pkgd.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\addons\jquery.zmd.hierarchical-display.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\addons\masonry.pkgd.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\addons\rating.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\bootstrap.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\bootstrap.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\jquery.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\jquery.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\mdb.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\mdb.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\modules\animations-extended.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\modules\forms-free.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\modules\scrolling-navbar.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\modules\treeview.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\modules\wow.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\popper.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\js\popper.min.js" />
+    <Content Include="UI\EXTERNO\MDB-Free\README.txt" />
+    <Content Include="UI\img\banner01.jpg" />
+    <Content Include="UI\img\banner02.jpg" />
+    <Content Include="UI\img\banner033.jpg" />
+    <Content Include="UI\img\certificado.png" />
+    <Content Include="UI\img\compra.png" />
+    <Content Include="UI\img\LogoAm.png" />
+    <Content Include="UI\img\LogoP.png" />
+    <Content Include="UI\PROFESSOR\CertificadoAdmc.aspx" />
+    <Content Include="UI\PROFESSOR\ConteudosAdmC.aspx" />
+    <Content Include="UI\PROFESSOR\CursoAdmC.aspx" />
+    <Content Include="UI\PROFESSOR\PagAdmComum.aspx" />
+    <Content Include="UI\PROFESSOR\PerfilAdmC.aspx" />
+    <Content Include="UI\PROFESSOR\QuizzAdmC.aspx" />
+    <Content Include="UI\PROFESSOR\QuizzPerguntasC.aspx" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\css\BackgroundPulseQuizz .css" />
+    <Content Include="UI\css\BackgroundPulse.css" />
+    <Content Include="UI\css\BackgroundPulseCadastro .css" />
+    <Content Include="UI\css\BackgroundPulseContato .css" />
+    <Content Include="UI\css\BackgroundPulseLogin .css" />
+    <Content Include="UI\css\BackgroundPulseLoginAdm .css" />
+    <Content Include="UI\css\bootstrap-grid.css" />
+    <Content Include="UI\css\bootstrap-grid.min.css" />
+    <Content Include="UI\css\bootstrap-reboot.css" />
+    <Content Include="UI\css\bootstrap-reboot.min.css" />
+    <Content Include="UI\css\bootstrap.css" />
+    <Content Include="UI\css\bootstrap.min.css" />
+    <Content Include="UI\css\Cadastroo.css" />
+    <Content Include="UI\css\Card01.css" />
+    <Content Include="UI\css\card1.css" />
+    <Content Include="UI\css\card3d.css" />
+    <Content Include="UI\css\cardcarousel.css" />
+    <Content Include="UI\css\CardCurso.css" />
+    <Content Include="UI\css\externo.css" />
+    <Content Include="UI\css\FaleConosco.css" />
+    <Content Include="UI\css\icons.css" />
+    <Content Include="UI\css\loogin.css" />
+    <Content Include="UI\css\LooginAdm.css" />
+    <Content Include="UI\css\Particule.css" />
+    <Content Include="UI\css\style.css" />
+    <Content Include="UI\ADMINISTRADOR\CursoAdmin.aspx" />
+    <Content Include="UI\EXTERNO\Cursos.aspx" />
+    <Content Include="UI\EXTERNO\Cursos1.aspx" />
+    <Content Include="UI\icon\face.png" />
+    <Content Include="UI\icon\insta.png" />
+    <Content Include="UI\icon\tt.png" />
+    <Content Include="UI\img\022.png" />
+    <Content Include="UI\img\1logo.png" />
+    <Content Include="UI\img\b0002.jpg" />
+    <Content Include="UI\img\b0003.jpg" />
+    <Content Include="UI\img\b003.jpg" />
+    <Content Include="UI\img\b02.jpg" />
+    <Content Include="UI\img\b03.jpg" />
+    <Content Include="UI\img\b04.jpg" />
+    <Content Include="UI\img\b05.jpg" />
+    <Content Include="UI\img\b06.jpg" />
+    <Content Include="UI\img\b100.jpg" />
+    <Content Include="UI\img\banner4.jpg" />
+    <Content Include="UI\img\bb03.jpg" />
+    <Content Include="UI\img\bb033.jpg" />
+    <Content Include="UI\img\cubo.png" />
+    <Content Include="UI\img\desenvolvedores\fab.png" />
+    <Content Include="UI\img\desenvolvedores\jey.png" />
+    <Content Include="UI\img\desenvolvedores\serello.png" />
+    <Content Include="UI\img\fundo.jpg" />
+    <Content Include="UI\img\fundo02.jpg" />
+    <Content Include="UI\img\fundo03.jpg" />
+    <Content Include="UI\img\fundo2.jpg" />
+    <Content Include="UI\img\hand.png" />
+    <Content Include="UI\img\isso.png" />
+    <Content Include="UI\img\libra.png" />
+    <Content Include="UI\img\lock.png" />
+    <Content Include="UI\img\logo.png" />
+    <Content Include="UI\img\logo01.png" />
+    <Content Include="UI\img\Logo2.png" />
+    <Content Include="UI\img\LogoAdm.png" />
+    <Content Include="UI\img\LogoExterno.png" />
+    <Content Include="UI\img\open-book.png" />
+    <Content Include="UI\img\search.png" />
+    <Content Include="UI\img\slide002.jpg" />
+    <Content Include="UI\img\slide02.jpg" />
+    <Content Include="UI\img\slide03.jpg" />
+    <Content Include="UI\img\slide2.jpg" />
+    <Content Include="UI\img\trovadorismo.jpg" />
+    <Content Include="UI\img\user.png" />
+    <Content Include="UI\img\w03.jpg" />
+    <Content Include="UI\EXTERNO\Index.aspx" />
+    <Content Include="UI\js\bootstrap.bundle.js" />
+    <Content Include="UI\js\bootstrap.bundle.min.js" />
+    <Content Include="UI\js\bootstrap.js" />
+    <Content Include="UI\js\bootstrap.min.js" />
+    <Content Include="UI\js\jsCardCarousel.js" />
+    <Content Include="UI\js\Particule.js" />
+    <Content Include="UI\EXTERNO\Login.aspx" />
+    <Content Include="UI\ADMINISTRADOR\LoginAdm.aspx" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\assets\ajax-loader.gif" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\assets\owl.carousel.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\assets\owl.carousel.min.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\assets\owl.theme.green.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\assets\owl.theme.green.min.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\assets\owl.video.play.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\owl.carousel.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\owl.carousel.min.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\css\animate.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\css\docs.theme.min.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\img\bird_blue_32.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\img\download.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\img\feature-drag.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\img\feature-modern.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\img\feature-module.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\img\feature-options.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\img\feature-responsive.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\img\feature-zombie.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\img\owl-logo.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\img\twitter_25.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\js\app.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\js\foundation.min.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.min.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\vendors\foundation.min.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\vendors\highlight.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.mousewheel.min.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\animate.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\autoheight.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\autoplay.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\autowidth.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\basic.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\center.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\demos.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\events.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\lazyLoad.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\merge.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\mousewheel.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\responsive.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\rtl.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\stagepadding.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\test.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\urlhashnav.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\demos\video.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\api-classes.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\api-events.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\api-options.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\dev-buildin-plugins.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\dev-external.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\dev-plugin-api.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\dev-styles.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\started-faq.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\started-installation.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\started-welcome.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\support-changelog.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\support-contact.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\docs\support-contributing.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\index.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\css\animate.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\img\bird_blue_32.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\img\download.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\img\feature-drag.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\img\feature-modern.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\img\feature-module.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\img\feature-options.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\img\feature-responsive.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\img\feature-zombie.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\img\owl-logo.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\img\twitter_25.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\js\app.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\js\foundation.min.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\vendors\foundation.min.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\vendors\highlight.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\vendors\jquery.min.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\vendors\jquery.mousewheel.min.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\helpers\modulo.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\helpers\test.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\Gruntfile.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\img\ajax-loader.gif" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\img\owl.video.play.png" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\owl.animate.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\owl.autoheight.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\owl.autoplay.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\owl.autorefresh.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\owl.carousel.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\owl.hash.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\owl.lazyload.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\owl.navigation.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\owl.support.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\owl.support.modernizr.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\owl.video.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\scss\CurProdut.css" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\test\index.html" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\test\unit\autoplay.js" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\test\unit\core.js" />
+    <Content Include="UI\ADMINISTRADOR\PagAdmin.aspx" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\css\black-dashboard.css" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\css\black-dashboard.min.css" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\css\nucleo-icons.css" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\demo\demo.css" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\demo\demo.js" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\12345.png" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\anime3.png" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\anime6.png" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\apple-icon.png" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\bg5.jpg" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\default-avatar.png" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\emilyz.jpg" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\favicon.png" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\header.jpg" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\img_3115.jpg" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\james.jpg" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\mike.jpg" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\img\now-logo.png" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\js\black-dashboard.js" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\js\black-dashboard.min.js" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\js\core\bootstrap.min.js" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\js\core\jquery.min.js" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\js\core\popper.min.js" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\js\plugins\chartjs.min.js" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="UI\PagAdm\black-dashboard-master\docs\documentation.html" />
+    <Content Include="UI\PagAdm\black-dashboard-master\examples\dashboard.html" />
+    <Content Include="UI\PagAdm\black-dashboard-master\examples\icons.html" />
+    <Content Include="UI\PagAdm\black-dashboard-master\examples\map.html" />
+    <Content Include="UI\PagAdm\black-dashboard-master\examples\notifications.html" />
+    <Content Include="UI\PagAdm\black-dashboard-master\examples\rtl.html" />
+    <Content Include="UI\PagAdm\black-dashboard-master\examples\tables.html" />
+    <Content Include="UI\PagAdm\black-dashboard-master\examples\typography.html" />
+    <Content Include="UI\PagAdm\black-dashboard-master\examples\upgrade.html" />
+    <Content Include="UI\PagAdm\black-dashboard-master\examples\user.html" />
+    <Content Include="UI\PagAdm\black-dashboard-master\gulpfile.js" />
+    <Content Include="UI\ADMINISTRADOR\PerfilAdm.aspx" />
+    <Content Include="UI\ADMINISTRADOR\ProfsAdmin.aspx" />
+    <Content Include="UI\ADMINISTRADOR\QuizzAdmin.aspx" />
+    <Content Include="UI\ADMINISTRADOR\QuizzPerguntas.aspx" />
+    <Content Include="UI\ADMINISTRADOR\TermosAdmin.aspx" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\bootstrap-grid.css" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\bootstrap-grid.min.css" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\bootstrap-reboot.css" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\bootstrap.css" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\bootstrap.min.css" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\style.css" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\js\bootstrap.bundle.js" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\js\bootstrap.js" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\js\bootstrap.min.js" />
+    <Content Include="UI\USUARIO\Certificado.aspx" />
+    <Content Include="UI\USUARIO\CertificadoExibir.aspx" />
+    <Content Include="UI\USUARIO\certificado\certificadoFinal2.png" />
+    <Content Include="UI\USUARIO\CSS\breadcrumb.css" />
+    <Content Include="UI\USUARIO\CSS\cardCurso.css" />
+    <Content Include="UI\USUARIO\CSS\cardTransform.css" />
+    <Content Include="UI\USUARIO\CSS\Collapse.css" />
+    <Content Include="UI\USUARIO\CSS\Collapsee.css" />
+    <Content Include="UI\USUARIO\CSS\imghower.css" />
+    <Content Include="UI\USUARIO\CSS\MinhaConta.css" />
+    <Content Include="UI\USUARIO\CSS\nucleo-icons.css" />
+    <Content Include="UI\USUARIO\CSS\paginacao.css" />
+    <Content Include="UI\USUARIO\CSS\pesquisa.css" />
+    <Content Include="UI\USUARIO\CSS\quiz.css" />
+    <Content Include="UI\USUARIO\CSS\search.css" />
+    <Content Include="UI\USUARIO\CSS\Style.css" />
+    <Content Include="UI\USUARIO\Cursos.aspx" />
+    <Content Include="UI\USUARIO\JS\cardcurso.js" />
+    <Content Include="UI\USUARIO\JS\collapse.js" />
+    <Content Include="UI\USUARIO\JS\Js.js" />
+    <Content Include="UI\USUARIO\JS\quiz.js" />
+    <Content Include="UI\USUARIO\JS\search.js" />
+    <Content Include="UI\USUARIO\MDB-Free\css\addons\datatables-select.min.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\addons\datatables.min.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\addons\directives.min.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\addons\flag.min.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\addons\jquery.zmd.hierarchical-display.min.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\addons\rating.min.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\bootstrap.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\bootstrap.min.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\mdb.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\mdb.lite.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\mdb.lite.min.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\mdb.min.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\modules\animations-extended.min.css" />
+    <Content Include="UI\USUARIO\MDB-Free\css\style.css" />
+    <Content Include="UI\USUARIO\MDB-Free\img\mdb-favicon.ico" />
+    <Content Include="UI\USUARIO\MDB-Free\img\overlays\01.png" />
+    <Content Include="UI\USUARIO\MDB-Free\img\overlays\02.png" />
+    <Content Include="UI\USUARIO\MDB-Free\img\overlays\03.png" />
+    <Content Include="UI\USUARIO\MDB-Free\img\overlays\04.png" />
+    <Content Include="UI\USUARIO\MDB-Free\img\overlays\05.png" />
+    <Content Include="UI\USUARIO\MDB-Free\img\overlays\06.png" />
+    <Content Include="UI\USUARIO\MDB-Free\img\overlays\07.png" />
+    <Content Include="UI\USUARIO\MDB-Free\img\overlays\08.png" />
+    <Content Include="UI\USUARIO\MDB-Free\img\overlays\09.png" />
+    <Content Include="UI\USUARIO\MDB-Free\img\svg\arrow_left.svg" />
+    <Content Include="UI\USUARIO\MDB-Free\img\svg\arrow_right.svg" />
+    <Content Include="UI\USUARIO\MDB-Free\index.html" />
+    <Content Include="UI\USUARIO\MDB-Free\INSANITY.txt" />
+    <Content Include="UI\USUARIO\MDB-Free\js\addons\datatables-select.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\addons\datatables.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\addons\directives.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\addons\flag.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\addons\imagesloaded.pkgd.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\addons\jquery.zmd.hierarchical-display.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\addons\masonry.pkgd.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\addons\rating.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\bootstrap.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\bootstrap.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\jquery.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\jquery.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\mdb.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\mdb.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\modules\animations-extended.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\modules\forms-free.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\modules\scrolling-navbar.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\modules\treeview.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\modules\wow.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\popper.js" />
+    <Content Include="UI\USUARIO\MDB-Free\js\popper.min.js" />
+    <Content Include="UI\USUARIO\MDB-Free\README.txt" />
+    <Content Include="UI\USUARIO\MinhaConta.aspx" />
+    <Content Include="UI\USUARIO\Quiz.aspx" />
+    <Content Include="UI\USUARIO\shadowbox\shadowbox-3.0.3\close.png" />
+    <Content Include="UI\USUARIO\shadowbox\shadowbox-3.0.3\expressInstall.swf" />
+    <Content Include="UI\USUARIO\shadowbox\shadowbox-3.0.3\loading.gif" />
+    <Content Include="UI\USUARIO\shadowbox\shadowbox-3.0.3\next.png" />
+    <Content Include="UI\USUARIO\shadowbox\shadowbox-3.0.3\pause.png" />
+    <Content Include="UI\USUARIO\shadowbox\shadowbox-3.0.3\play.png" />
+    <Content Include="UI\USUARIO\shadowbox\shadowbox-3.0.3\player.swf" />
+    <Content Include="UI\USUARIO\shadowbox\shadowbox-3.0.3\previous.png" />
+    <Content Include="UI\USUARIO\shadowbox\shadowbox-3.0.3\shadowbox.css" />
+    <Content Include="UI\USUARIO\shadowbox\shadowbox-3.0.3\shadowbox.js" />
+    <Content Include="UI\USUARIO\Usuario.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Administrador.cs" />
+    <Compile Include="BLL\Aluno.cs" />
+    <Compile Include="BLL\Assinatura.cs" />
+    <Compile Include="BLL\Aula.cs" />
+    <Compile Include="BLL\Contato.cs" />
+    <Compile Include="BLL\Criptografia.cs" />
+    <Compile Include="BLL\Curso.cs" />
+    <Compile Include="BLL\Login.cs" />
+    <Compile Include="BLL\Pergunta.cs" />
+    <Compile Include="BLL\Professor.cs" />
+    <Compile Include="BLL\Quizz.cs" />
+    <Compile Include="BLL\RespostaUsu.cs" />
+    <Compile Include="BLL\Termos.cs" />
+    <Compile Include="DAL\AdministradorDAL.cs" />
+    <Compile Include="DAL\AlunoDAL.cs" />
+    <Compile Include="DAL\AulaDAL.cs" />
+    <Compile Include="DAL\Conexao.cs" />
+    <Compile Include="DAL\ContatoDAL.cs" />
+    <Compile Include="DAL\CursoDAL.cs" />
+    <Compile Include="DAL\LoginDAL.cs" />
+    <Compile Include="DAL\PerguntaDAL.cs" />
+    <Compile Include="DAL\ProfessorDAL.cs" />
+    <Compile Include="DAL\QuizzDAL.cs" />
+    <Compile Include="DAL\RespostaUsuDAL.cs" />
+    <Compile Include="DAL\TermosDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\ADMINISTRADOR\CertificadoAdmin.aspx.cs">
+      <DependentUpon>CertificadoAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\CertificadoAdmin.aspx.designer.cs">
+      <DependentUpon>CertificadoAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\SenhaAdmin.aspx.cs">
+      <DependentUpon>SenhaAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\SenhaAdmin.aspx.designer.cs">
+      <DependentUpon>SenhaAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EXTERNO\AddCarrinho.aspx.cs">
+      <DependentUpon>AddCarrinho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\EXTERNO\AddCarrinho.aspx.designer.cs">
+      <DependentUpon>AddCarrinho.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Cadastro.aspx.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Cadastro.aspx.designer.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Carrinho.aspx.cs">
+      <DependentUpon>Carrinho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Carrinho.aspx.designer.cs">
+      <DependentUpon>Carrinho.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Contato.aspx.cs">
+      <DependentUpon>Contato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Contato.aspx.designer.cs">
+      <DependentUpon>Contato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\ConteudoAdmin.aspx.cs">
+      <DependentUpon>ConteudoAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\ConteudoAdmin.aspx.designer.cs">
+      <DependentUpon>ConteudoAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\CursoAdmin.aspx.cs">
+      <DependentUpon>CursoAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\CursoAdmin.aspx.designer.cs">
+      <DependentUpon>CursoAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Cursos.aspx.cs">
+      <DependentUpon>Cursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Cursos.aspx.designer.cs">
+      <DependentUpon>Cursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Cursos1.aspx.cs">
+      <DependentUpon>Cursos1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Cursos1.aspx.designer.cs">
+      <DependentUpon>Cursos1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\EXTERNO\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\LoginAdm.aspx.cs">
+      <DependentUpon>LoginAdm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\LoginAdm.aspx.designer.cs">
+      <DependentUpon>LoginAdm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\CertificadoAdmc.aspx.cs">
+      <DependentUpon>CertificadoAdmc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\CertificadoAdmc.aspx.designer.cs">
+      <DependentUpon>CertificadoAdmc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\ConteudosAdmC.aspx.cs">
+      <DependentUpon>ConteudosAdmC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\ConteudosAdmC.aspx.designer.cs">
+      <DependentUpon>ConteudosAdmC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\CursoAdmC.aspx.cs">
+      <DependentUpon>CursoAdmC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\CursoAdmC.aspx.designer.cs">
+      <DependentUpon>CursoAdmC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\PagAdmComum.aspx.cs">
+      <DependentUpon>PagAdmComum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\PagAdmComum.aspx.designer.cs">
+      <DependentUpon>PagAdmComum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\PerfilAdmC.aspx.cs">
+      <DependentUpon>PerfilAdmC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\PerfilAdmC.aspx.designer.cs">
+      <DependentUpon>PerfilAdmC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\QuizzAdmC.aspx.cs">
+      <DependentUpon>QuizzAdmC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\QuizzAdmC.aspx.designer.cs">
+      <DependentUpon>QuizzAdmC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\QuizzPerguntasC.aspx.cs">
+      <DependentUpon>QuizzPerguntasC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PROFESSOR\QuizzPerguntasC.aspx.designer.cs">
+      <DependentUpon>QuizzPerguntasC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\PagAdmin.aspx.cs">
+      <DependentUpon>PagAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\PagAdmin.aspx.designer.cs">
+      <DependentUpon>PagAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\PerfilAdm.aspx.cs">
+      <DependentUpon>PerfilAdm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\PerfilAdm.aspx.designer.cs">
+      <DependentUpon>PerfilAdm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\ProfsAdmin.aspx.cs">
+      <DependentUpon>ProfsAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\ProfsAdmin.aspx.designer.cs">
+      <DependentUpon>ProfsAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\QuizzAdmin.aspx.cs">
+      <DependentUpon>QuizzAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\QuizzAdmin.aspx.designer.cs">
+      <DependentUpon>QuizzAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\QuizzPerguntas.aspx.cs">
+      <DependentUpon>QuizzPerguntas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\QuizzPerguntas.aspx.designer.cs">
+      <DependentUpon>QuizzPerguntas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\TermosAdmin.aspx.cs">
+      <DependentUpon>TermosAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ADMINISTRADOR\TermosAdmin.aspx.designer.cs">
+      <DependentUpon>TermosAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\USUARIO\Certificado.aspx.cs">
+      <DependentUpon>Certificado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\USUARIO\Certificado.aspx.designer.cs">
+      <DependentUpon>Certificado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\USUARIO\CertificadoExibir.aspx.cs">
+      <DependentUpon>CertificadoExibir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\USUARIO\CertificadoExibir.aspx.designer.cs">
+      <DependentUpon>CertificadoExibir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\USUARIO\Cursos.aspx.cs">
+      <DependentUpon>Cursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\USUARIO\Cursos.aspx.designer.cs">
+      <DependentUpon>Cursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\USUARIO\MinhaConta.aspx.cs">
+      <DependentUpon>MinhaConta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\USUARIO\MinhaConta.aspx.designer.cs">
+      <DependentUpon>MinhaConta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\USUARIO\Quiz.aspx.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\USUARIO\Quiz.aspx.designer.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\USUARIO\Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\USUARIO\Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="UI\css\bootstrap-grid.css.map" />
+    <Content Include="UI\css\bootstrap-grid.min.css.map" />
+    <Content Include="UI\css\bootstrap-reboot.css.map" />
+    <Content Include="UI\css\bootstrap-reboot.min.css.map" />
+    <Content Include="UI\css\bootstrap.css.map" />
+    <Content Include="UI\css\bootstrap.min.css.map" />
+    <Content Include="UI\js\bootstrap.bundle.js.map" />
+    <Content Include="UI\js\bootstrap.bundle.min.js.map" />
+    <Content Include="UI\js\bootstrap.js.map" />
+    <Content Include="UI\js\bootstrap.min.js.map" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\.gitattributes" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\.gitignore" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\.travis.yml" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\bower.json" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\CONTRIBUTING.md" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\LICENSE" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\README.md" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\owlcarousel\README.md" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.map" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\scss\custom.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\scss\demos.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.theme.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\scss\highlight.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\scss\_settings.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\assets\vendors\jquery.min.map" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\data\classes.json" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\data\events.json" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\data\features.json" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\data\options.json" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\layouts\demos.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\layouts\docs.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\layouts\home.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\animate.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\autoheight.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\autoplay.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\autowidth.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\basic.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\center.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\demos.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\events.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\lazyLoad.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\merge.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\mousewheel.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\responsive.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\rtl.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\stagepadding.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\test.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\urlhashnav.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\video.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\api-classes.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\api-events.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\api-options.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-buildin-plugins.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-external.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-plugin-api.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-styles.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\started-faq.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\started-installation.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\started-welcome.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\support-changelog.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\support-contact.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\support-contributing.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\pages\index.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\partials\footer.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\partials\head.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\partials\header.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\partials\home-carousel.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\partials\home-features.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\partials\home-hero.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\partials\home-teaser-text.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\partials\javascripts.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\partials\releated-docs.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\partials\sidenav-docs.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\partials\title.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs_src\templates\partials\vendors.hbs" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\ISSUE_TEMPLATE.md" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\LICENSE" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\package-lock.json" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\package.json" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\README.md" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\ROADMAP.md" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\.jscsrc" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\.jshintrc" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\_jscsrc" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\_jscsrc%281%29" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\_jshintrc" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\js\_jshintrc%281%29" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\scss\owl.carousel.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\scss\owl.theme.default.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\scss\owl.theme.green.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\scss\_animate.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\scss\_autoheight.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\scss\_core.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\scss\_lazyload.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\scss\_theme.default.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\scss\_theme.green.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\scss\_theme.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\src\scss\_video.scss" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\_config.json" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\_gitattributes" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\_gitattributes%281%29" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\_gitignore" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\_gitignore%281%29" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\_travis%281%29.yml" />
+    <Content Include="UI\OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\_travis.yml" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\css\black-dashboard.css.map" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\fonts\nucleo.eot" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\fonts\nucleo.ttf" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\fonts\nucleo.woff" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\fonts\nucleo.woff2" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\js\black-dashboard.js.map" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\bootstrap-grid.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\bootstrap.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_alert.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_badge.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_buttons.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_caret.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_float.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_forms.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_gradients.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_grid.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_hover.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_image.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_list-group.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_lists.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_pagination.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_resize.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_size.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_table-row.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_transition.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_visibility.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_align.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_background.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_borders.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_display.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_embed.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_flex.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_float.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_overflow.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_position.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_shadows.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_sizing.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_spacing.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_text.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_visibility.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\vendor\_rfs.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_alert.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_badge.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_breadcrumb.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_button-group.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_buttons.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_card.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_carousel.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_close.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_code.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_custom-forms.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_dropdown.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_forms.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_functions.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_grid.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_images.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_input-group.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_jumbotron.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_list-group.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_media.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_mixins.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_modal.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_nav.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_navbar.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_pagination.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_popover.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_print.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_progress.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_reboot.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_root.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_spinners.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_tables.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_toasts.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_tooltip.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_transitions.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_type.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_utilities.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_variables.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\cards\_card-chart.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\cards\_card-map.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\cards\_card-plain.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\cards\_card-task.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\cards\_card-user.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\opacity.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_alert.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_background-variant.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_badges.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_buttons.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_dropdown.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_forms.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_icon.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_inputs.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_modals.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_page-header.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_popovers.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_vendor-prefixes.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_wizard.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_backgrounds.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_floating.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_helper.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_position.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_shadows.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_sizing.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_spacing.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_text.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_transform.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\vendor\_plugin-animate-bootstrap-notify.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\vendor\_plugin-perfect-scrollbar.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_alerts.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_buttons.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_card.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_checkboxes-radio.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_dropdown.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_example-pages.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_fixed-plugin.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_footer.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_forms.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_functions.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_images.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_input-group.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_misc.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_mixins.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_modal.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_navbar.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_rtl.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_sidebar-and-main-panel.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_tables.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_type.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_utilities.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_variables.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\custom\_white-content.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\plugins\_plugin-perfect-scrollbar.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\_buttons.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\assets\scss\black-dashboard\_typography.scss" />
+    <Content Include="UI\PagAdm\black-dashboard-master\CHANGELOG.md" />
+    <Content Include="UI\PagAdm\black-dashboard-master\LICENSE.md" />
+    <Content Include="UI\PagAdm\black-dashboard-master\package.json" />
+    <Content Include="UI\PagAdm\black-dashboard-master\README.md" />
+    <Content Include="UI\black-dashboard-master\assets\css\black-dashboard.css.map" />
+    <Content Include="UI\black-dashboard-master\assets\fonts\nucleo.eot" />
+    <Content Include="UI\black-dashboard-master\assets\fonts\nucleo.ttf" />
+    <Content Include="UI\black-dashboard-master\assets\fonts\nucleo.woff" />
+    <Content Include="UI\black-dashboard-master\assets\fonts\nucleo.woff2" />
+    <Content Include="UI\black-dashboard-master\assets\js\black-dashboard.js.map" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\_buttons.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\_typography.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_alert.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_badge.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_breadcrumb.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_button-group.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_buttons.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_card.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_carousel.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_close.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_code.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_custom-forms.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_dropdown.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_forms.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_functions.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_grid.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_images.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_input-group.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_jumbotron.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_list-group.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_media.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_mixins.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_modal.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_nav.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_navbar.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_pagination.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_popover.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_print.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_progress.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_reboot.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_root.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_spinners.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_tables.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_toasts.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_tooltip.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_transitions.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_type.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_utilities.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\_variables.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\bootstrap-grid.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\bootstrap.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_alert.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_badge.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_buttons.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_caret.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_float.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_forms.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_gradients.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_grid.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_hover.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_image.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_list-group.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_lists.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_pagination.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_resize.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_size.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_table-row.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_transition.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\mixins\_visibility.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_align.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_background.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_borders.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_display.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_embed.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_flex.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_float.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_overflow.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_position.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_shadows.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_sizing.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_spacing.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_text.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\utilities\_visibility.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\bootstrap\vendor\_rfs.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_alerts.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_buttons.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_card.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_checkboxes-radio.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_dropdown.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_example-pages.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_fixed-plugin.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_footer.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_forms.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_functions.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_images.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_input-group.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_misc.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_mixins.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_modal.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_navbar.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_rtl.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_sidebar-and-main-panel.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_tables.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_type.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_utilities.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_variables.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\_white-content.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\cards\_card-chart.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\cards\_card-map.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\cards\_card-plain.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\cards\_card-task.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\cards\_card-user.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_alert.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_background-variant.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_badges.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_buttons.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_dropdown.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_forms.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_icon.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_inputs.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_modals.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_page-header.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_popovers.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_vendor-prefixes.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\_wizard.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\mixins\opacity.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_backgrounds.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_floating.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_helper.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_position.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_shadows.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_sizing.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_spacing.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_text.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\utilities\_transform.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\vendor\_plugin-animate-bootstrap-notify.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\custom\vendor\_plugin-perfect-scrollbar.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard\plugins\_plugin-perfect-scrollbar.scss" />
+    <Content Include="UI\black-dashboard-master\assets\scss\black-dashboard.scss" />
+    <Content Include="UI\black-dashboard-master\CHANGELOG.md" />
+    <Content Include="UI\black-dashboard-master\LICENSE.md" />
+    <Content Include="UI\black-dashboard-master\package.json" />
+    <Content Include="UI\black-dashboard-master\README.md" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\bootstrap-grid.css.map" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\bootstrap.css.map" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\css\bootstrap.min.css.map" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\js\bootstrap.bundle.js.map" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\js\bootstrap.js.map" />
+    <Content Include="UI\USUARIO\bootstrap-4.3.1-dist\js\bootstrap.min.js.map" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Bold.eot" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Bold.ttf" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Bold.woff" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Bold.woff2" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Light.eot" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Light.ttf" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Light.woff" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Light.woff2" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Medium.eot" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Medium.ttf" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Medium.woff" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Medium.woff2" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Regular.eot" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Regular.ttf" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Regular.woff" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Regular.woff2" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Thin.eot" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Thin.ttf" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Thin.woff" />
+    <Content Include="UI\USUARIO\MDB-Free\font\roboto\Roboto-Thin.woff2" />
+    <Content Include="UI\USUARIO\MDB-Free\License.pdf" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\addons\_datatables-select.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\addons\_datatables.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\addons\_directives.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\addons\_flag.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\addons\_hierarchical-display.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\addons\_rating.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\core\bootstrap\_functions.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\core\bootstrap\_rfs.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\core\bootstrap\_variables.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\core\_colors.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\core\_global.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\core\_helpers.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\core\_masks.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\core\_mixins.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\core\_typography.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\core\_variables.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\core\_waves.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\modules\animations-extended\animations-extended.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\modules\animations-extended\_module.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_animations-basic.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_badges.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_buttons.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_cards.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_carousels.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_depreciated.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_dropdowns.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_footers.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_forms.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_input-group.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_list-group.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_loader.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_modals.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_msc.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_navbars.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_pagination.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_steppers.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_tables.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\free\_treeview.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\mdb-free.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\mdb-lite-free.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\_custom-styles.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\scss\_custom-variables.scss" />
+    <Content Include="UI\USUARIO\MDB-Free\Useful_Resources.pdf" />
+    <Content Include="UI\USUARIO\shadowbox\shadowbox-3.0.3\LICENSE" />
+    <Content Include="UI\USUARIO\shadowbox\shadowbox-3.0.3\README" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Bold.eot" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Bold.ttf" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Bold.woff" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Bold.woff2" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Light.eot" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Light.ttf" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Light.woff" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Light.woff2" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Medium.eot" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Medium.ttf" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Medium.woff" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Medium.woff2" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Regular.eot" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Regular.ttf" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Regular.woff" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Regular.woff2" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Thin.eot" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Thin.ttf" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Thin.woff" />
+    <Content Include="UI\EXTERNO\MDB-Free\font\roboto\Roboto-Thin.woff2" />
+    <Content Include="UI\EXTERNO\MDB-Free\License.pdf" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\addons\_datatables-select.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\addons\_datatables.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\addons\_directives.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\addons\_flag.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\addons\_hierarchical-display.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\addons\_rating.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\core\bootstrap\_functions.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\core\bootstrap\_rfs.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\core\bootstrap\_variables.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\core\_colors.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\core\_global.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\core\_helpers.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\core\_masks.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\core\_mixins.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\core\_typography.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\core\_variables.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\core\_waves.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\modules\animations-extended\animations-extended.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\modules\animations-extended\_module.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_animations-basic.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_badges.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_buttons.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_cards.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_carousels.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_depreciated.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_dropdowns.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_footers.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_forms.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_input-group.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_list-group.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_loader.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_modals.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_msc.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_navbars.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_pagination.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_steppers.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_tables.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\free\_treeview.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\mdb-free.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\mdb-lite-free.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\_custom-styles.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\scss\_custom-variables.scss" />
+    <Content Include="UI\EXTERNO\MDB-Free\Useful_Resources.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\fotoprof\" />
+    <Folder Include="UI\fotouser\" />
+    <Folder Include="UI\imagens\" />
+    <Folder Include="UI\img\App_LocalResources\" />
+    <Folder Include="UI\material\" />
+    <Folder Include="UI\termosdeuso\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1636</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1636/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

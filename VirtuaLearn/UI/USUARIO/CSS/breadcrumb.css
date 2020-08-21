@@ -1,0 +1,87 @@
+﻿
+
+
+
+h1 {
+    color: #77c2a5;
+    font-weight: 600;
+    padding: 50px 0;
+}
+
+UL.breadc {
+    margin-left: 50px;
+    display: inLIne-block;
+    LIst-style: none;
+}
+
+    UL.breadc LI {
+        float: right;
+        padding: 5px;
+        background-color: #ffb152;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        position: relative;
+        margin-left: -50px;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        margin-top: 3px;
+    }
+
+        UL.breadc LI a {
+            overflow: hidden;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+            text-decoration: none;
+            height: 50px;
+            color: #222;
+            background-color: #ffc883;
+            text-aLIgn: center;
+            min-width: 50px;
+            display: block;
+            LIne-height: 50px;
+            padding-left: 52px;
+            padding-right: 33.33333px;
+            width: 50px;
+        }
+
+            UL.breadc LI a .icon {
+                display: inLIne-block;
+            }
+
+            UL.breadc LI a .text {
+                display: inLIne-block;
+                opacity: 0;
+            }
+
+            UL.breadc LI a:hover {
+                width: 150px;
+                background-color: #ffc883;
+            }
+
+                UL.breadc LI a:hover .text {
+                    display: inLIne-block;
+                    opacity: 1;
+                }
+
+        UL.breadc LI:last-child a {
+            padding: 0;
+        }
+
+        UL.breadc LI:last-child:hover {
+            padding: 3px;
+            margin-top: 0;
+        }
+
+            UL.breadc LI:last-child:hover a {
+                width: 60px;
+                height: 60px;
+                LIne-height: 60px;
+            }
