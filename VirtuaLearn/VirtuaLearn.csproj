@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DB\banco.sql" />
     <Content Include="UI\ADMINISTRADOR\CertificadoAdmin.aspx" />
     <Content Include="UI\ADMINISTRADOR\SenhaAdmin.aspx" />
     <Content Include="UI\EXTERNO\AddCarrinho.aspx" />
