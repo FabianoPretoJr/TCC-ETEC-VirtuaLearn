@@ -24,4 +24,4 @@ Você deverá ter instalado em sua máquina o programa Visual Studio da Microsof
 
 - Em sua máquina abra a pasta  TCC-ETEC-VirtuaLearn
 - Aperta no arquivo VirtuaLearn.sln
-- Agora basta abrir alguma página dentro da pasta UI, para isso clique com esquerde e aperte em inicializar na web com o navegador da sua máquina.
+- Agora basta abrir alguma página dentro da pasta UI, para isso clique com esquerde e aperte em Exibir no Navegador com o instalado em sua máquina.
